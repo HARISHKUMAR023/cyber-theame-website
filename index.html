@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberTake Symposium</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="https://kit.fontawesome.com/65210e3c63.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <style>
+        .hero-bg {
+            position: relative;
+            height: 100vh;
+            overflow: hidden;
+        }
+        #particles-js {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+        }
+        .hero-content {
+            position: relative;
+            z-index: 10;
+            text-align: center;
+            color: white;
+        }
+    </style>
+</head>
+<body class="font-sans antialiased text-gray-900">
+
+   
+
+    <!-- Navbar -->
+    <nav class="bg-black text-white py-4">
+        <div class="container mx-auto flex items-center justify-between px-6">
+            <a href="#" class="text-2xl font-bold"><span class="glitch" data-text="CYBERTALK '24">CYBERTALK '24</span> </a>
+            <ul class="flex space-x-6">
+                <li><a href="#home" class="hover:text-green-400 font-medium">Home</a></li>
+                <li><a href="#about" class="hover:text-green-400 font-medium">About</a></li>
+                <li><a href="#schedule" class="hover:text-green-400 font-medium">Schedule</a></li>
+                <li><a href="#contact" class="hover:text-green-400 font-medium">Contact</a></li>
+                <li><a href="#contact" class="hover:text-green-400 bg-green-500 rounded-md font-bold p-3">Regester Now</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-bg flex items-center  bg-gray-900">
+        <div class="hero-content  p-8 rounded-lg w-9/12">
+            <h1 class="text-7xl font-extrabold mb-4">Welcome to <span class="glitch" data-text="CYBERTALK '24">CYBERTALK '24</span> </h1>
+            <p class="text-5xl mb-6">Sona College of Technology</p>
+            <!-- <p class="text-center text-2xl font-bold">Department of</p> -->
+            <p class="mb-5 text-3xl font-bold"> Department of Master of Computer Applications</p>
+            <a href="#register" class="bg-green-500 hover:bg-green-600 text-white font-bold py-3 mt-10 px-6 rounded-lg">Register Now</a>
+        </div>
+
+        <div class="w-3/12">
+            <img src="./assets/img/cyber.svg" alt="cyber illustration"  class="h-[600px] w-[400px">
+        </div>
+    </section>
+
+     <!-- Particles.js Container -->
+     <div id="particles-js"></div>
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-12 text-gray-900">About the Symposium</h2>
+            <div class="flex flex-col md:flex-row md:space-x-8">
+                <!-- Mission Section -->
+                <div class="flex-1 bg-white shadow-lg rounded-lg p-8 mb-8 md:mb-0 transition-transform transform hover:scale-105">
+                    <div class="flex items-center mb-6">
+                        <i class="fas fa-rocket text-4xl text-green-500 mr-4"></i>
+                        <h3 class="text-3xl font-semibold text-gray-800">Our Mission</h3>
+                    </div>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        CyberTake aims to bring together the brightest minds in technology to explore the latest trends in cybersecurity, artificial intelligence, and more. Join us for a day of insightful talks, networking opportunities, and hands-on workshops.
+                    </p>
+                </div>
+                <!-- Keynote Speakers Section -->
+                <div class="flex-1 bg-white shadow-lg rounded-lg p-8 transition-transform transform hover:scale-105">
+                    <div class="flex items-center mb-6">
+                        <i class="fas fa-microphone-alt text-4xl text-blue-500 mr-4"></i>
+                        <h3 class="text-3xl font-semibold text-gray-800">Keynote Speakers</h3>
+                    </div>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        Hear from industry leaders and experts who will share their knowledge and experience on cutting-edge topics. Our keynote speakers are pioneers in their fields, providing valuable insights into the future of technology.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+
+<!--organizer seciton-->
+<section id="organizers" class="py-16 bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900">
+    <div class="container mx-auto px-6">
+        <h2 class="text-4xl text-white font-bold text-center mb-12">Meet Our Organizers</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <!-- Organizer 1 -->
+            <div class="bg-gray-800 p-6 rounded-lg shadow-xl hover:shadow-2xl transition-shadow duration-300">
+                <img src="./assets/img/person.jpg" alt="Organizer 1" class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-green-500">
+                <h3 class="text-xl font-semibold text-center text-white mb-2">Jane Doe</h3>
+                <p class="text-center text-gray-400 mb-4">Lead Organizer</p>
+            </div>
+            <!-- Organizer 2 -->
+            <div class="bg-gray-800 p-6 rounded-lg shadow-xl hover:shadow-2xl transition-shadow duration-300">
+                <img src="./assets/img/person.jpg" alt="Organizer 2" class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-green-500">
+                <h3 class="text-xl font-semibold text-center text-white mb-2">John Smith</h3>
+                <p class="text-center text-gray-400 mb-4">Technical Director</p>
+            </div>
+            <!-- Organizer 3 -->
+            <div class="bg-gray-800 p-6 rounded-lg shadow-xl hover:shadow-2xl transition-shadow duration-300">
+                <img src="./assets/img/person.jpg" alt="Organizer 3" class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-green-500">
+                <h3 class="text-xl font-semibold text-center text-white mb-2">Alice Johnson</h3>
+                <p class="text-center text-gray-400 mb-4">Marketing Lead</p>
+            </div>
+            <!-- Organizer 4 -->
+            <div class="bg-gray-800 p-6 rounded-lg shadow-xl hover:shadow-2xl transition-shadow duration-300">
+                <img src="./assets/img/person.jpg" alt="Organizer 4" class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-green-500">
+                <h3 class="text-xl font-semibold text-center text-white mb-2">Emily Clark</h3>
+                <p class="text-center text-gray-400 mb-4">Event Coordinator</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+    
+
+
+    <!-- Schedule Section -->
+    <section id="events" class="py-16 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <!-- Tabs -->
+           <!-- Tabs -->
+<div class="flex justify-center mb-12">
+    <button id="technicalEventsTab" class="px-6 py-3 text-lg font-semibold btn-active rounded-t-lg hover:bg-gray-300 focus:outline-none">Technical Events</button>
+    <button id="nonTechnicalEventsTab" class="px-6 py-3 text-lg font-semibold btn-inactive rounded-t-lg hover:bg-gray-300 focus:outline-none">Non-Technical Events</button>
+</div>
+
+    
+            <!-- Tab Content -->
+            <div id="technicalEvents" class="tab-content ">
+                <h2 class="text-4xl font-bold text-center text-gray-800 mb-12">Technical Events</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Event 1 -->
+                    <div class="bg-gradient-to-r from-blue-600 to-blue-800 p-6 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                        <div class="flex items-center mb-4">
+                            <i class="fas fa-file-alt text-white text-3xl mr-4"></i>
+                            <h3 class="text-2xl font-semibold text-white">Paper Presentation</h3>
+                        </div>
+                        <p class="text-white mb-4">Mind Wrap</p>
+                        <a href="#" class="text-yellow-400 hover:text-yellow-300 font-semibold">View Details</a>
+                    </div>
+                    <!-- More Events... -->
+                       <!-- Event 2 -->
+                <div class="bg-gradient-to-r from-red-600 to-red-800 p-6 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300 transform hover:scale-105">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-bug text-white text-3xl mr-4"></i>
+                        <h3 class="text-2xl font-semibold text-white">Debugging</h3>
+                    </div>
+                    <p class="text-white mb-4">Code Mastery</p>
+                    <a href="#" class="text-yellow-400 hover:text-yellow-300 font-semibold">View Details</a>
+                </div>
+                <!-- Event 3 -->
+                <div class="bg-gradient-to-r from-green-600 to-green-800 p-6 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300 transform hover:scale-105">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-comments text-white text-3xl mr-4"></i>
+                        <h3 class="text-2xl font-semibold text-white">Technical Debate</h3>
+                    </div>
+                    <p class="text-white mb-4">TechTalk Tussle</p>
+                    <a href="#" class="text-yellow-400 hover:text-yellow-300 font-semibold">View Details</a>
+                </div>
+                <!-- Event 4 -->
+                <div class="bg-gradient-to-r from-purple-600 to-purple-800 p-6 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300 transform hover:scale-105">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-laptop-code text-white text-3xl mr-4"></i>
+                        <h3 class="text-2xl font-semibold text-white">Web Designing</h3>
+                    </div>
+                    <p class="text-white mb-4">Spidee Beast</p>
+                    <a href="#" class="text-yellow-400 hover:text-yellow-300 font-semibold">View Details</a>
+                </div>
+                </div>
+            </div>
+    
+            <div id="nonTechnicalEvents" class="tab-content hidden">
+                <h2 class="text-4xl font-bold text-center text-gray-800 mb-12">Non-Technical Events</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Event 1 -->
+                    <div class="bg-gradient-to-r from-yellow-600 to-yellow-800 p-6 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                        <div class="flex items-center mb-4">
+                            <i class="fas fa-lightbulb text-white text-3xl mr-4"></i>
+                            <h3 class="text-2xl font-semibold text-white">Paper Presentation</h3>
+                        </div>
+                        <p class="text-white mb-4">Brand Brilliance</p>
+                        <a href="#" class="text-yellow-400 hover:text-yellow-300 font-semibold">View Details</a>
+                    </div>
+                    <!-- More Events... -->
+                        <!-- Event 2 -->
+                <div class="bg-gradient-to-r from-pink-600 to-pink-800 p-6 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300 transform hover:scale-105">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-paint-brush text-white text-3xl mr-4"></i>
+                        <h3 class="text-2xl font-semibold text-white">Visual Arts</h3>
+                    </div>
+                    <p class="text-white mb-4">Visual Vibes</p>
+                    <a href="#" class="text-yellow-400 hover:text-yellow-300 font-semibold">View Details</a>
+                </div>
+                <!-- Event 3 -->
+                <div class="bg-gradient-to-r from-orange-600 to-orange-800 p-6 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300 transform hover:scale-105">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-microphone text-white text-3xl mr-4"></i>
+                        <h3 class="text-2xl font-semibold text-white">Track Teller</h3>
+                    </div>
+                    <p class="text-white mb-4">Technical Debate</p>
+                    <a href="#" class="text-yellow-400 hover:text-yellow-300 font-semibold">View Details</a>
+                </div>
+                <!-- Event 4 -->
+                <div class="bg-gradient-to-r from-teal-600 to-teal-800 p-6 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300 transform hover:scale-105">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-search text-white text-3xl mr-4"></i>
+                        <h3 class="text-2xl font-semibold text-white">Secret Seekers</h3>
+                    </div>
+                    <p class="text-white mb-4">Web Designing</p>
+                    <a href="#" class="text-yellow-400 hover:text-yellow-300 font-semibold">View Details</a>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <script>
+      
+            document.getElementById('technicalEventsTab').addEventListener('click', function() {
+                document.getElementById('technicalEvents').classList.remove('hidden');
+                document.getElementById('nonTechnicalEvents').classList.add('hidden');
+                document.getElementById('technicalEventsTab').classList.add('btn-active');
+                document.getElementById('technicalEventsTab').classList.remove('btn-inactive');
+                document.getElementById('nonTechnicalEventsTab').classList.add('btn-inactive');
+                document.getElementById('nonTechnicalEventsTab').classList.remove('btn-active');
+            });
+            
+            document.getElementById('nonTechnicalEventsTab').addEventListener('click', function() {
+                document.getElementById('nonTechnicalEvents').classList.remove('hidden');
+                document.getElementById('technicalEvents').classList.add('hidden');
+                document.getElementById('nonTechnicalEventsTab').classList.add('btn-active');
+                document.getElementById('nonTechnicalEventsTab').classList.remove('btn-inactive');
+                document.getElementById('technicalEventsTab').classList.add('btn-inactive');
+                document.getElementById('technicalEventsTab').classList.remove('btn-active');
+            });
+            
+            
+    </script>
+    <!--genral infromation-->
+    <section id="general-info" class="py-16 bg-gray-800 text-gray-800">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-12 text-green-500">General Information</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Information Item 1 -->
+                <div class="flex items-start space-x-4 p-6 bg-white shadow-md rounded-lg border border-gray-200">
+                    <div class="w-16 h-16 flex items-center justify-center bg-blue-100 rounded-full">
+                        <i class="fas fa-money-bill-wave text-blue-500 text-3xl"></i>
+                    </div>
+                    <div>
+                        <h4 class="text-xl font-semibold mb-2">Registration Fee</h4>
+                        <p>Rs.200/- per participant. Participants can register for multiple events with a single registration.</p>
+                    </div>
+                </div>
+    
+                <!-- Information Item 2 -->
+                <div class="flex items-start space-x-4 p-6 bg-white shadow-md rounded-lg border border-gray-200">
+                    <div class="w-16 h-16 flex items-center justify-center bg-green-100 rounded-full">
+                        <i class="fas fa-users text-green-500 text-3xl"></i>
+                    </div>
+                    <div>
+                        <h4 class="text-xl font-semibold mb-2">Team Registration</h4>
+                        <p>Each member of a team must be individually registered.</p>
+                    </div>
+                </div>
+    
+                <!-- Information Item 3 -->
+                <div class="flex items-start space-x-4 p-6 bg-white shadow-md rounded-lg border border-gray-200">
+                    <div class="w-16 h-16 flex items-center justify-center bg-yellow-100 rounded-full">
+                        <i class="fas fa-id-card text-yellow-500 text-3xl"></i>
+                    </div>
+                    <div>
+                        <h4 class="text-xl font-semibold mb-2">ID Proof</h4>
+                        <p>Participants must wear their college ID card as proof of identity.</p>
+                    </div>
+                </div>
+    
+                <!-- Information Item 4 -->
+                <div class="flex items-start space-x-4 p-6 bg-white shadow-md rounded-lg border border-gray-200">
+                    <div class="w-16 h-16 flex items-center justify-center bg-red-100 rounded-full">
+                        <i class="fas fa-clock text-red-500 text-3xl"></i>
+                    </div>
+                    <div>
+                        <h4 class="text-xl font-semibold mb-2">Entry Time</h4>
+                        <p>Entry begins at 8:00 AM.</p>
+                    </div>
+                </div>
+    
+                <!-- Information Item 5 -->
+                <div class="flex items-start space-x-4 p-6 bg-white shadow-md rounded-lg border border-gray-200">
+                    <div class="w-16 h-16 flex items-center justify-center bg-purple-100 rounded-full">
+                        <i class="fas fa-boxes text-purple-500 text-3xl"></i>
+                    </div>
+                    <div>
+                        <h4 class="text-xl font-semibold mb-2">Registration Kit</h4>
+                        <p>A registration kit, refreshment, and lunch will be provided.</p>
+                    </div>
+                </div>
+    
+                <!-- Information Item 6 -->
+                <div class="flex items-start space-x-4 p-6 bg-white shadow-md rounded-lg border border-gray-200">
+                    <div class="w-16 h-16 flex items-center justify-center bg-teal-100 rounded-full">
+                        <i class="fas fa-certificate text-teal-500 text-3xl"></i>
+                    </div>
+                    <div>
+                        <h4 class="text-xl font-semibold mb-2">Certificates</h4>
+                        <p>Participant certificates will be provided as e-certificates.</p>
+                    </div>
+                </div>
+    
+                <!-- Information Item 7 -->
+                <div class="flex items-start space-x-4 p-6 bg-white shadow-md rounded-lg border border-gray-200">
+                    <div class="w-16 h-16 flex items-center justify-center bg-orange-100 rounded-full">
+                        <i class="fas fa-trophy text-orange-500 text-3xl"></i>
+                    </div>
+                    <div>
+                        <h4 class="text-xl font-semibold mb-2">Awards</h4>
+                        <p>Winner and runner-up prizes will be awarded.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+
+    <!-- Contact Section -->
+    <section id="contact-us" class="py-16 bg-gray-900 text-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-12">Contact Us</h2>
+            <div class="flex flex-wrap justify-center gap-12 mb-12">
+                <!-- Address -->
+                <div class="flex flex-col items-start bg-gray-800 p-6 rounded-lg shadow-lg max-w-sm w-full text-center md:text-left">
+                    <i class="fas fa-map-marker-alt text-blue-500 text-4xl mb-4"></i>
+                    <h4 class="text-xl font-semibold mb-2">Address</h4>
+                    <p>MCA / Green Building Block,<br>Sona College of Technology,<br>Junction Main Rd,<br>Salem, Tamil Nadu 636005</p>
+                </div>
+                <!-- Phone Number -->
+                <div class="flex flex-col items-start bg-gray-800 p-6 rounded-lg shadow-lg max-w-sm w-full text-center md:text-left">
+                    <i class="fas fa-phone-alt text-green-500 text-4xl mb-4"></i>
+                    <h4 class="text-xl font-semibold mb-2">Phone Number</h4>
+                    <p>
+                        <a href="tel:+917708370616" class="text-green-300 hover:text-green-100">+91 7708370616</a>
+                    </p>
+                </div>
+                <!-- Email -->
+                <div class="flex flex-col items-start bg-gray-800 p-6 rounded-lg shadow-lg max-w-sm w-full text-center md:text-left">
+                    <i class="fas fa-envelope text-yellow-500 text-4xl mb-4"></i>
+                    <h4 class="text-xl font-semibold mb-2">Email</h4>
+                    <p>
+                        <a href="mailto:sonamca.studentasso@gmail.com" class="text-yellow-300 hover:text-yellow-100">sonamca.studentasso@gmail.com</a>
+                    </p>
+                </div>
+            </div>
+    
+            <!-- Contact Form -->
+            <!-- <div class="bg-gray-800 p-8 rounded-lg shadow-lg mb-12 mx-36">
+                <h3 class="text-2xl font-semibold text-center mb-6">Send Us a Message</h3>
+                <form action="#" method="post" class="space-y-4">
+                    <div class="flex flex-col md:flex-row gap-4">
+                        <div class="flex-1">
+                            <label for="name" class="block text-sm font-medium text-gray-300">Name</label>
+                            <input type="text" id="name" name="name" required class="w-full px-4 py-2 border border-gray-700 rounded-md bg-gray-900 text-white focus:outline-none focus:ring-2 focus:ring-blue-500"/>
+                        </div>
+                        <div class="flex-1">
+                            <label for="email" class="block text-sm font-medium text-gray-300">Email</label>
+                            <input type="email" id="email" name="email" required class="w-full px-4 py-2 border border-gray-700 rounded-md bg-gray-900 text-white focus:outline-none focus:ring-2 focus:ring-blue-500"/>
+                        </div>
+                    </div>
+                    <div>
+                        <label for="message" class="block text-sm font-medium text-gray-300">Message</label>
+                        <textarea id="message" name="message" rows="4" required class="w-full px-4 py-2 border border-gray-700 rounded-md bg-gray-900 text-white focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">Send Message</button>
+                </form>
+            </div> -->
+    
+            <!-- Map -->
+            <div class="mb-12">
+                <h3 class="text-2xl font-semibold text-center mb-6">Our Location</h3>
+                <div class="w-full h-96">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15871.799255887435!2d78.11767379008557!3d11.617282660609268!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba857f8e1e6d7bb%3A0x8210e1ccf3f8dfd4!2sSona%20College%20of%20Technology!5e0!3m2!1sen!2sin!4v1629195376994!5m2!1sen!2sin" allowfullscreen="" loading="lazy" class="w-full h-full rounded-lg"></iframe>
+                </div>
+            </div>
+    
+            <!-- Social Media Links -->
+            <div class="text-center">
+                <h3 class="text-2xl font-semibold mb-4">Follow Us</h3>
+                <div class="flex justify-center gap-6">
+                    <a href="https://facebook.com" target="_blank" class="text-blue-600 hover:text-blue-700"><i class="fab fa-facebook-f text-3xl"></i></a>
+                    <a href="https://twitter.com" target="_blank" class="text-blue-400 hover:text-blue-500"><i class="fab fa-twitter text-3xl"></i></a>
+                    <a href="https://instagram.com" target="_blank" class="text-pink-500 hover:text-pink-600"><i class="fab fa-instagram text-3xl"></i></a>
+                    <a href="https://linkedin.com" target="_blank" class="text-blue-700 hover:text-blue-800"><i class="fab fa-linkedin-in text-3xl"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    
+    
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-4">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 CYBERTALK '24 Symposium | Harishkumar N | All rights reserved</p>
+        </div>
+    </footer>
+
+    <!-- Particles.js Initialization -->
+    <script>
+        particlesJS('particles-js', {
+            "particles": {
+                "number": {
+                    "value": 80,
+                    "density": {
+                        "enable": true,
+                        "value_area": 800
+                    }
+                },
+                "color": {
+                    "value": "#22c55e"
+                },
+                "shape": {
+                    "type": "circle",
+                    "stroke": {
+                        "width": 0,
+                        "color": "#22c55e"
+                    },
+                    "polygon": {
+                        "nb_sides": 8
+                    }
+                },
+                "opacity": {
+                    "value": 0.5,
+                    "random": false,
+                    "anim": {
+                        "enable": false,
+                        "speed": 1,
+                        "opacity_min": 0.1,
+                        "sync": false
+                    }
+                },
+                "size": {
+                    "value": 3,
+                    "random": true,
+                    "anim": {
+                        "enable": false,
+                        "speed": 40,
+                        "size_min": 0.1,
+                        "sync": false
+                    }
+                },
+                "line_linked": {
+                    "enable": true,
+                    "distance": 150,
+                    "color": "#ffffff",
+                    "opacity": 0.4,
+                    "width": 1
+                },
+                "move": {
+                    "enable": true,
+                    "speed": 6,
+                    "direction": "none",
+                    "random": false,
+                    "straight": false,
+                    "out_mode": "out",
+                    "bounce": false,
+                    "attract": {
+                        "enable": false,
+                        "rotateX": 600,
+                        "rotateY": 1200
+                    }
+                }
+            },
+            "interactivity": {
+                "detect_on": "canvas",
+                "events": {
+                    "onhover": {
+                        "enable": true,
+                        "mode": "repulse"
+                    },
+                    "onclick": {
+                        "enable": true,
+                        "mode": "push"
+                    },
+                    "resize": true
+                }
+            },
+            "retina_detect": true
+        });
+    </script>
+</body>
+</html>

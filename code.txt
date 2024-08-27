@@ -1,0 +1,85 @@
+    <section id="events" class="py-16 bg-gray-900">
+        <div class="container mx-auto px-6">
+            <!-- Technical Events -->
+            <h2 class="text-4xl font-bold text-center text-gray-800 mb-12">Technical Events</h2>
+            <div class="grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+                <!-- Event 1 -->
+                <div class="bg-gradient-to-r from-blue-600 to-blue-800 p-6 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300 transform hover:scale-105">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-file-alt text-white text-3xl mr-4"></i>
+                        <h3 class="text-2xl font-semibold text-white">Paper Presentation</h3>
+                    </div>
+                    <p class="text-white mb-4">Mind Wrap</p>
+                    <a href="#" class="text-yellow-400 hover:text-yellow-300 font-semibold">View Details</a>
+                </div>
+                <!-- Event 2 -->
+                <div class="bg-gradient-to-r from-red-600 to-red-800 p-6 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300 transform hover:scale-105">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-bug text-white text-3xl mr-4"></i>
+                        <h3 class="text-2xl font-semibold text-white">Debugging</h3>
+                    </div>
+                    <p class="text-white mb-4">Code Mastery</p>
+                    <a href="#" class="text-yellow-400 hover:text-yellow-300 font-semibold">View Details</a>
+                </div>
+                <!-- Event 3 -->
+                <div class="bg-gradient-to-r from-green-600 to-green-800 p-6 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300 transform hover:scale-105">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-comments text-white text-3xl mr-4"></i>
+                        <h3 class="text-2xl font-semibold text-white">Technical Debate</h3>
+                    </div>
+                    <p class="text-white mb-4">TechTalk Tussle</p>
+                    <a href="#" class="text-yellow-400 hover:text-yellow-300 font-semibold">View Details</a>
+                </div>
+                <!-- Event 4 -->
+                <div class="bg-gradient-to-r from-purple-600 to-purple-800 p-6 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300 transform hover:scale-105">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-laptop-code text-white text-3xl mr-4"></i>
+                        <h3 class="text-2xl font-semibold text-white">Web Designing</h3>
+                    </div>
+                    <p class="text-white mb-4">Spidee Beast</p>
+                    <a href="#" class="text-yellow-400 hover:text-yellow-300 font-semibold">View Details</a>
+                </div>
+            </div>
+    
+            <!-- Non-Technical Events -->
+            <h2 class="text-4xl font-bold text-center text-gray-800 mt-16 mb-12">Non-Technical Events</h2>
+            <div class="grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+                <!-- Event 1 -->
+                <div class="bg-gradient-to-r from-yellow-600 to-yellow-800 p-6 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300 transform hover:scale-105">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-lightbulb text-white text-3xl mr-4"></i>
+                        <h3 class="text-2xl font-semibold text-white">Paper Presentation</h3>
+                    </div>
+                    <p class="text-white mb-4">Brand Brilliance</p>
+                    <a href="#" class="text-yellow-400 hover:text-yellow-300 font-semibold">View Details</a>
+                </div>
+                <!-- Event 2 -->
+                <div class="bg-gradient-to-r from-pink-600 to-pink-800 p-6 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300 transform hover:scale-105">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-paint-brush text-white text-3xl mr-4"></i>
+                        <h3 class="text-2xl font-semibold text-white">Visual Arts</h3>
+                    </div>
+                    <p class="text-white mb-4">Visual Vibes</p>
+                    <a href="#" class="text-yellow-400 hover:text-yellow-300 font-semibold">View Details</a>
+                </div>
+                <!-- Event 3 -->
+                <div class="bg-gradient-to-r from-orange-600 to-orange-800 p-6 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300 transform hover:scale-105">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-microphone text-white text-3xl mr-4"></i>
+                        <h3 class="text-2xl font-semibold text-white">Track Teller</h3>
+                    </div>
+                    <p class="text-white mb-4">Technical Debate</p>
+                    <a href="#" class="text-yellow-400 hover:text-yellow-300 font-semibold">View Details</a>
+                </div>
+                <!-- Event 4 -->
+                <div class="bg-gradient-to-r from-teal-600 to-teal-800 p-6 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300 transform hover:scale-105">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-search text-white text-3xl mr-4"></i>
+                        <h3 class="text-2xl font-semibold text-white">Secret Seekers</h3>
+                    </div>
+                    <p class="text-white mb-4">Web Designing</p>
+                    <a href="#" class="text-yellow-400 hover:text-yellow-300 font-semibold">View Details</a>
+                </div>
+            </div>
+        </div>
+    </section>
