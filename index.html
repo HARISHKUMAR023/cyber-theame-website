@@ -37,34 +37,59 @@
     <!-- Navbar -->
     <nav class="bg-black text-white py-4">
         <div class="container mx-auto flex items-center justify-between px-6">
-            <a href="#" class="text-2xl font-bold"><span class="glitch" data-text="CYBERTALK '24">CYBERTALK '24</span> </a>
-            <ul class="flex space-x-6">
+            <a href="#" class="text-2xl font-bold"><span class="glitch" data-text="CYBERTALK '24">CYBERTALK '24</span></a>
+            
+            <!-- Hamburger Icon for mobile -->
+            <button class="lg:hidden block" id="nav-toggle">
+                <svg class="w-6 h-6 fill-current text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                </svg>
+            </button>
+    
+            <!-- Navigation Links -->
+            <ul id="nav-menu" class="hidden lg:flex space-x-6">
                 <li><a href="#home" class="hover:text-green-400 font-medium">Home</a></li>
                 <li><a href="#about" class="hover:text-green-400 font-medium">About</a></li>
                 <li><a href="#schedule" class="hover:text-green-400 font-medium">Schedule</a></li>
                 <li><a href="#contact" class="hover:text-green-400 font-medium">Contact</a></li>
-                <li><a href="#contact" class="hover:text-green-400 bg-green-500 rounded-md font-bold p-3">Regester Now</a></li>
+                <li><a href="#register" class="hover:text-green-400 bg-green-500 rounded-md font-bold p-3">Register Now</a></li>
             </ul>
         </div>
+    
+        <!-- Mobile Menu -->
+        <ul id="mobile-menu" class="lg:hidden flex-col hidden space-y-4 mt-4 px-6">
+            <li><a href="#home" class="block hover:text-green-400 font-medium">Home</a></li>
+            <li><a href="#about" class="block hover:text-green-400 font-medium">About</a></li>
+            <li><a href="#schedule" class="block hover:text-green-400 font-medium">Schedule</a></li>
+            <li><a href="#contact" class="block hover:text-green-400 font-medium">Contact</a></li>
+            <li><a href="#register" class="block hover:text-green-400 bg-green-500 rounded-md font-bold p-3">Register Now</a></li>
+        </ul>
     </nav>
+    
+ 
+    
 
     <!-- Hero Section -->
-    <section id="home" class="hero-bg flex items-center  bg-gray-900">
-        <div class="hero-content  p-8 rounded-lg w-9/12">
-            <h1 class="text-7xl font-extrabold mb-4">Welcome to <span class="glitch" data-text="CYBERTALK '24">CYBERTALK '24</span> </h1>
-            <p class="text-5xl mb-6">Sona College of Technology</p>
-            <!-- <p class="text-center text-2xl font-bold">Department of</p> -->
-            <p class="mb-5 text-3xl font-bold"> Department of Master of Computer Applications</p>
-            <a href="#register" class="bg-green-500 hover:bg-green-600 text-white font-bold py-3 mt-10 px-6 rounded-lg">Register Now</a>
+    <section id="home" class="hero-bg flex flex-col lg:flex-row items-center bg-gray-900">
+        <div class="hero-content p-4 lg:p-8 rounded-lg w-full lg:w-9/12 text-center lg:text-left">
+            <h1 class="text-4xl sm:text-5xl lg:text-7xl font-extrabold mb-4">
+                Welcome to <span class="glitch" data-text="CYBERTALK '24">CYBERTALK '24</span>
+            </h1>
+            <p class="text-2xl sm:text-3xl lg:text-5xl mb-6">Sona College of Technology</p>
+            <p class="mb-5 text-xl sm:text-2xl lg:text-3xl font-bold">Department of Master of Computer Applications</p>
+            <a href="#register" class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 lg:py-3 px-4 lg:px-6 rounded-lg">
+                Register Now
+            </a>
         </div>
-
-        <div class="w-3/12">
-            <img src="./assets/img/cyber.svg" alt="cyber illustration"  class="h-[600px] w-[400px">
+    
+        <div class="w-full lg:w-3/12 mt-6 lg:mt-0 flex justify-center lg:justify-end">
+            <img src="./assets/img/cyber.svg" alt="cyber illustration" class="h-60 w-40 sm:h-72 sm:w-52 lg:h-[600px] lg:w-[400px]">
         </div>
     </section>
+    
 
      <!-- Particles.js Container -->
-     <div id="particles-js"></div>
+     <!-- <div id="particles-js"></div> -->
     <!-- About Section -->
     <section id="about" class="py-16 bg-gray-100">
         <div class="container mx-auto px-6">
@@ -232,28 +257,7 @@
         </div>
     </section>
     
-    <script>
-      
-            document.getElementById('technicalEventsTab').addEventListener('click', function() {
-                document.getElementById('technicalEvents').classList.remove('hidden');
-                document.getElementById('nonTechnicalEvents').classList.add('hidden');
-                document.getElementById('technicalEventsTab').classList.add('btn-active');
-                document.getElementById('technicalEventsTab').classList.remove('btn-inactive');
-                document.getElementById('nonTechnicalEventsTab').classList.add('btn-inactive');
-                document.getElementById('nonTechnicalEventsTab').classList.remove('btn-active');
-            });
-            
-            document.getElementById('nonTechnicalEventsTab').addEventListener('click', function() {
-                document.getElementById('nonTechnicalEvents').classList.remove('hidden');
-                document.getElementById('technicalEvents').classList.add('hidden');
-                document.getElementById('nonTechnicalEventsTab').classList.add('btn-active');
-                document.getElementById('nonTechnicalEventsTab').classList.remove('btn-inactive');
-                document.getElementById('technicalEventsTab').classList.add('btn-inactive');
-                document.getElementById('technicalEventsTab').classList.remove('btn-active');
-            });
-            
-            
-    </script>
+  
     <!--genral infromation-->
     <section id="general-info" class="py-16 bg-gray-800 text-gray-800">
         <div class="container mx-auto px-6">
@@ -423,6 +427,14 @@
         </div>
     </footer>
 
+
+    <script>
+        const navToggle = document.getElementById('nav-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+        navToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
     <!-- Particles.js Initialization -->
     <script>
         particlesJS('particles-js', {
